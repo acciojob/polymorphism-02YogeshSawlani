@@ -4,22 +4,22 @@ public class Main {
        public static class Product{
               public int product(int x,int y)
               {
-                  return 0;
+                  return x*y;
               }
               public int product(int x,int y,int z)
               {
-                  return 0;
+                  return x*y*z;
               }
               public double product(double x,double y)
               {
-                    return 0;
+                    return x*y;
               }
        }
        public static void main(String[]args)
        {
               Product p = new Product();
-              p.product(5,6);
-              p.product(5,6,7);
-              p.product(4.0,5.0);
+              System.out.println( p.product(5,6));
+              System.out.println(p.product(5,6,7));
+              System.out.println(p.product(4.0,5.0));
        }
 }
